@@ -2,10 +2,7 @@
 title: API Reference
 
 language_tabs: # must be one of https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
-  - shell
-  - ruby
   - python
-  - javascript
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -20,85 +17,98 @@ code_clipboard: true
 
 meta:
   - name: description
-    content: Documentation for the Kittn API
+    content: Documentation for the FlyingLet API
 ---
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+FlyingLet API에 오신 것을 환영합니다! 우리의 API를 사용하여 데이터베이스에 있는 다양한 로봇에 대한 정보를 얻을 수 있습니다.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+우리는 Shell, Ruby, Python, JavaScript에서의 언어 바인딩을 제공합니다! 오른쪽의 어두운 영역에서 코드 예제를 확인할 수 있으며, 오른쪽 상단의 탭을 사용하여 예제의 프로그래밍 언어를 변경할 수 있습니다.
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+이 예시 API 문서 페이지는 Slate로 생성되었습니다. 필요에 따라 편집하고, 자체 API 문서의 기반으로 사용하실 수 있습니다.
 
 # Authentication
 
+## Access Token, Refresh Token 발급 
+
 > To authorize, use this code:
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
 ```python
-import kittn
+import requests
 
-api = kittn.authorize('meowmeowmeow')
+# POST 요청 보내기
+data = {
+    "email":"your@email.com",
+    "password":"password"
+}
+
+response = requests.post('https://dev.flyinglet.com/login', json=data)
+
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
 ```
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here" \
-  -H "Authorization: meowmeowmeow"
-```
+> The above command returns JSON structured like this:
 
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
+```json
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4ODM3MTgyNiwianRpIjoiMWVmNjc3YjUtNTM0OS00NjA3LTg3ZjAtZmI2MzkwM2VlOTMxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImltZ3VteEBuYXZlci5jb20iLCJuYmYiOjE2ODgzNzE4MjYsImV4cCI6MTY4ODM3MTg4Niwicm9sZSI6InVzZXIifQ.xtzQhYpB4TW__m6dyG3YL_wp2DDsi_ShPOHIztBKKrQ",
+    "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4ODM3MTgyNiwianRpIjoiZjE1ZDJkNmMtMDgyZS00Njg5LTk1NjctYTg3NDc3NmFhNDI2IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJpbWd1bXhAbmF2ZXIuY29tIiwibmJmIjoxNjg4MzcxODI2LCJleHAiOjE2ODgzNzU0MjZ9.qV4hdV0cNGW1YTEc4AzhZ0qvHB3ORXIWX2CBkKq4iLI"
+}
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+1) 클라이언트에서 로그인 시 인증 서버에 유저 인증 요청.
+
+2) 인증 서버에서 클라이언트로 Access token 과 Refresh token 발급, 클라이언트 쿠키에 저장.
+
+3) 클라이언트에서 유효한 Access token을 헤더에 담아 서버에 리소스 요청.
+
+4) Access token 이 유효하면 요청 리소스 응답.
+
+5) 클라이언트에서 유효하지 않은 Access token을 헤더에 담아 서버에 리소스 요청.
+
+6) 서버에서 클라이언트로 토큰 에러 메시지 응답.
+
+7) 클라이언트에서 토큰 에러 메시지를 받았다면, 인증 서버로 Refresh token 전송.
+
+8) Refresh token이 유효하다면 새 Access token 과 기존 Refresh token 응답.
 
 `Authorization: meowmeowmeow`
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>meowmeowmeow</code> with your personal Access token.
 </aside>
 
 # Kittens
 
 ## Get All Kittens
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
 ```python
-import kittn
+import requests
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
+# GET 요청 보내기
+response = requests.get('https://dev.api.flyinglet.com/')
 
-```shell
-curl "http://example.com/api/kittens" \
-  -H "Authorization: meowmeowmeow"
-```
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
 
-```javascript
-const kittn = require('kittn');
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
 ```
 
 > The above command returns JSON structured like this:
@@ -141,32 +151,12 @@ Remember — a happy kitten is an authenticated kitten!
 
 ## Get a Specific Kitten
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
 ```python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
 api.kittens.get(2)
 ```
-
-```shell
-curl "http://example.com/api/kittens/2" \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
-
 > The above command returns JSON structured like this:
 
 ```json
@@ -195,31 +185,11 @@ ID | The ID of the kitten to retrieve
 
 ## Delete a Specific Kitten
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
 ```python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
 api.kittens.delete(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2" \
-  -X DELETE \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
 ```
 
 > The above command returns JSON structured like this:
