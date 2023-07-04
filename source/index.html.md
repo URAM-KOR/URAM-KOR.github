@@ -1468,7 +1468,7 @@ robot_id | true | robot_id
 ```python
 import requests
 
-# URL 
+# URL
 url = 'https://dev.flyinglet.com/stream/robot?robot_id=robot_id'
 
 # GET 요청 보내기
