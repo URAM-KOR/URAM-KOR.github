@@ -1696,27 +1696,25 @@ Parameter | Default | Description
 id | false | DB에 저장된 '_id' 값.
 
 
-## Create Users collection 
+## Create Managers collection 
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Users'
+url = 'https://dev.flyinglet.com/Managers'
 
 # POST 요청 보내기
-data = [
-    {
-        "email": "uram@naver.com",
-        "password": "1234",
-        "role": "admin",
-        "userName": "uram",
-        "phoneNumber": "01012345678",
-        "login": "1",
-        "success": "1"
+data = {
+        "deviceName": "D.conic",
+        "deviceNum": " test",
+        "manager_01": " m1",
+        "manager_02": " m2",
+        "manager_03": " m3",
+        "sms_01": " s1",
+        "sms_02": " s2",
+        "sms_03": " s3"
     }
-]
-
 response = requests.post(url, json=data)
 # 응답 상태 코드 확인
 status_code = response.status_code
@@ -1737,19 +1735,21 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Users`
+`POST https://dev.flyinglet.com/Managers`
 
 
 ### Body(Json)
 
 Parameter | Default | Description
 --------- | ------- | -----------
-email | false | email
-password | false | password
-role | false | role
-phoneNumber | false | phoneNumber
-login | false | login
-success | false | success
+deviceName | false | deviceName
+deviceNum | false | deviceNum
+manager_01 | false | manager_01
+manager_02 | false | manager_02
+manager_03 | false | manager_03
+sms_01 | false | sms_01
+sms_03 | false | sms_03
+sms_03 | false | sms_03
 
 
 ## Get Manufacturers collection
