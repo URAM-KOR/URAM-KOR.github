@@ -1,6 +1,6 @@
 .git/
 .github/
-build/
+docs/
 .editorconfig
 .gitattributes
 .gitignore

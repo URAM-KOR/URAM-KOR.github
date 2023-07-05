@@ -1937,7 +1937,7 @@ lunr.Index.prototype.search = function (queryString) {
  * the query to perform on the index.
  *
  * @callback lunr.Index~queryBuilder
- * @param {lunr.Query} query - The query object to build up.
+ * @param {lunr.Query} query - The query object to docs up.
  * @this lunr.Query
  */
 
@@ -1954,7 +1954,7 @@ lunr.Index.prototype.search = function (queryString) {
  * asynchronous operation, the callback is just yielded a query object to be
  * customized.
  *
- * @param {lunr.Index~queryBuilder} fn - A function that is used to build the query.
+ * @param {lunr.Index~queryBuilder} fn - A function that is used to docs the query.
  * @returns {lunr.Index~Result[]}
  */
 lunr.Index.prototype.query = function (fn) {
@@ -2401,7 +2401,7 @@ lunr.Builder.prototype.ref = function (ref) {
  * All fields should be added before adding documents to the index. Adding fields after
  * a document has been indexed will have no effect on already indexed documents.
  *
- * Fields can be boosted at build time. This allows terms within that field to have more
+ * Fields can be boosted at docs time. This allows terms within that field to have more
  * importance when ranking search results. Use a field boost to specify that matches within
  * one field are more important than other fields.
  *
@@ -2458,7 +2458,7 @@ lunr.Builder.prototype.k1 = function (number) {
  * it should have all fields defined for indexing, though null or undefined values will not
  * cause errors.
  *
- * Entire documents can be boosted at build time. Applying a boost to a document indicates that
+ * Entire documents can be boosted at docs time. Applying a boost to a document indicates that
  * this document should rank higher in search results than other documents.
  *
  * @param {object} doc - The document to add to the index.

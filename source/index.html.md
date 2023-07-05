@@ -131,7 +131,7 @@ You must replace <code>meowmeowmeow</code> with your personal Refresh token.
 }
 ```
 
-# Data managment
+# Data Managment
 
 ## Get Admin collection
 
@@ -2502,7 +2502,7 @@ Parameter | Default | Description
 robot_id | false | Robot 등록시 저장된 'robot_id' 값.
 
 
-# Business logic
+# Business Logic
 
 ## Admin Sign in 
 
