@@ -1476,13 +1476,13 @@ Parameter | Default | Description
 id | false | DB에 저장된 '_id' 값.
 
 
-## Create Users collection 
+## Create Registry collection 
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Users'
+url = 'https://dev.flyinglet.com/Registry/{{user_id}}'
 
 # POST 요청 보내기
 data = [
@@ -1515,9 +1515,16 @@ print(data)
 64a5081ec0cca540d70b788e
 ```
 
+<aside class="notice">
+
+You must replace <code>meowmeowmeow</code> with your personal Access token.
+
+</aside>
+
+
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Users`
+`POST https://dev.flyinglet.com/Registry/{{User_Id}}`
 
 
 ### Body(Json)

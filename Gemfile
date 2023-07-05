@@ -11,3 +11,4 @@ gem 'redcarpet', '~> 3.6.0'
 gem 'nokogiri', '~> 1.13.3'
 gem 'sass'
 gem 'webrick'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
