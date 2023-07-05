@@ -1253,26 +1253,23 @@ Parameter | Default | Description
 id | false | DB에 저장된 '_id' 값.
 
 
-## Create Users collection 
+## Create Summaries collection 
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Users'
+url = 'https://dev.flyinglet.com/Summaries'
 
 # POST 요청 보내기
-data = [
-    {
-        "email": "uram@naver.com",
-        "password": "1234",
-        "role": "admin",
-        "userName": "uram",
-        "phoneNumber": "01012345678",
-        "login": "1",
-        "success": "1"
+data = {
+        "point": "2층",
+        "robotCount": "2",
+        "flagshipStore": "출입구, 로비중앙",
+        "routeDistance": "14",
+        "routeTime": "2",
+        "videoCount": "1",
     }
-]
 
 response = requests.post(url, json=data)
 # 응답 상태 코드 확인
@@ -1292,21 +1289,30 @@ print(data)
 64a5081ec0cca540d70b788e
 ```
 
+`Authorization: meowmeowmeow`
+
+<aside class="notice">
+
+You must replace <code>meowmeowmeow</code> with your personal Access token.
+
+</aside>
+
+
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Users`
+`POST https://dev.flyinglet.com/Summaries`
 
 
 ### Body(Json)
 
 Parameter | Default | Description
 --------- | ------- | -----------
-email | false | email
-password | false | password
-role | false | role
-phoneNumber | false | phoneNumber
-login | false | login
-success | false | success
+point | false | point
+robotCount | false | robotCount
+flagshipStore | false | flagshipStore
+routeDistance | false | routeDistance
+routeTime | false | routeTime
+videoCount | false | videoCount
 
 
 ## Get Registry collection
