@@ -1,0 +1,83 @@
+[33mcommit 67199f4022897b964b97a86bf2b4484b378e33fd[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Wed Jul 5 17:04:14 2023 +0900
+
+    bundle install
+
+[33mcommit c85bedaa38ec53ac3dd074dfef3172f6d6a76bf6[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Wed Jul 5 16:57:12 2023 +0900
+
+    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+[33mcommit 40d110e326333f0506d9bf061292d024c118dc61[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Wed Jul 5 16:50:14 2023 +0900
+
+    ruby--version 2.7
+
+[33mcommit f20e1be75c43c3f47b220e8c68efab389d90f635[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Wed Jul 5 16:45:17 2023 +0900
+
+    Empty commit
+
+[33mcommit 591aeb347361162c38f45234c470238df8234492[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Wed Jul 5 16:25:18 2023 +0900
+
+    ruby version
+
+[33mcommit 4b76b3137c676fa96580ee269fe7e9998ff0211f[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Wed Jul 5 16:09:31 2023 +0900
+
+    add APIs
+
+[33mcommit 6f1757f15e332fce4f6c30dd27ff384e96ba84a8[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Wed Jul 5 11:11:51 2023 +0900
+
+    delete
+
+[33mcommit 858ce9216e62444a7b8a039c7ebd707cedb1671c[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Wed Jul 5 10:51:23 2023 +0900
+
+    set OS, ruby version
+
+[33mcommit 1910d8af12160b0693b7571e6204946f55d12616[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Tue Jul 4 17:33:28 2023 +0900
+
+    create readme
+
+[33mcommit e2c7c6f0377327a2eea85b80ca7fafa3b7e8eeaa[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Tue Jul 4 17:27:47 2023 +0900
+
+    delete readme
+
+[33mcommit 891eb668058dea30e1a2d2d6cd5dad4f99960b4b[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Tue Jul 4 17:21:31 2023 +0900
+
+    git pages
+
+[33mcommit 4f82c24b664040d4329c7b369ee244963d7943f5[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Tue Jul 4 17:10:20 2023 +0900
+
+    Add API_230704
+
+[33mcommit 39573978cdc0d3a1909cb48991d680bbc745532b[m
+Author: URAM-KOR <imgumx@gmail.com>
+Date:   Mon Jul 3 17:55:08 2023 +0900
+
+    230add hentication  ã_230703
+
+[33mcommit 4bdf79982ba90e45353ac9e489e1a5542b7a67fd[m
+Author: URAM-KOR <76554431+URAM-KOR@users.noreply.github.com>
+Date:   Fri Jun 30 10:34:46 2023 +0900
+
+    Initial commit

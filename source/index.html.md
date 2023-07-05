@@ -1482,20 +1482,60 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Registry/{{user_id}}'
+url = 'https://dev.flyinglet.com/Registry/64a5081ec0cca540d70b788e'
 
 # POST 요청 보내기
-data = [
-    {
-        "email": "uram@naver.com",
-        "password": "1234",
-        "role": "admin",
-        "userName": "uram",
-        "phoneNumber": "01012345678",
-        "login": "1",
-        "success": "1"
+data = {
+        "deviceName": "uram@naver.com",
+        "deviceNum": "1234",
+        "kcCertificationNumber": "admin",
+        "mainAbility": "uram",
+        "manufacturer": "01012345678",
+        "min": "1",
+        "modelImg": "1",
+        "modelName": "1",
+        "modelNumber": "1",
+        "modelVersion": "1",
+        "productName": "1",
+        "operatingLocation": "1",
+        "serialNumber": "1",
+        "subAbility": "1",
+        "specialFunctions": "1",
+        "fCode": "1",
+        "manufacturerCode": "1",
+        "productCode": "1",
+        "modelCode": "1",
+        "productDate": "1",
+        "manager_01": "1",
+        "sms_01": "1",
+        "manager_02": "1",
+        "sms_02": "1",
+        "manager_03": "1",
+        "sms_03": "1",
+        "userID": "1",
+        "location_id": "1",
+        "realRobotID": "1",
+        "battery": "1",
+        "current_covid_info": "1",
+        "current_waypoint_id": "1",
+        "drive_distance": "1",
+        "drive_status": "1",
+        "drive_time": "1",
+        "map_id": "1",
+        "network": "1",
+        "robot_id": "1",
+        "robot_status": "1",
+        "speed": "1",
+        "total_distance": "1",
+        "total_time": "1",
+        "isActive": "1",
+        "alarm_01": "1",
+        "alarm_02": "1",
+        "alarm_03": "1",
+        "secretKey": "1",
+        "chipSN": "1",
     }
-]
+
 
 response = requests.post(url, json=data)
 # 응답 상태 코드 확인
@@ -1509,10 +1549,17 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Json structured like this:
 
-```text
-64a5081ec0cca540d70b788e
+```Json
+[
+    {
+        "map_id": "1",
+        "oid": "64a52766c0cca540d70b79be",
+        "port": "",
+        "robot_id": "1-00019"
+    }
+]
 ```
 
 <aside class="notice">
