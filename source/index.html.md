@@ -38,7 +38,7 @@ FlyingLet API에 오신 것을 환영합니다! 우리의 API를 사용하여 �
 import requests
 
 # URL
-url = 'https://dev.flyinglet.com/login'
+url = 'https://dev.api.flyinglet.com/login'
 
 # POST 요청 보내기
 data = {
@@ -98,7 +98,7 @@ password | false | 회원 가입 시 등록한 비밀번호.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/refresh'
+url = 'https://dev.api.flyinglet.com/refresh'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -139,7 +139,7 @@ You must replace <code>meowmeowmeow</code> with your personal Refresh token.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Admin'
+url = 'https://dev.api.flyinglet.com/Admin'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -186,7 +186,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Admin`
+`GET https://dev.api.flyinglet.com/Admin`
 
 ### Path Parameters
 
@@ -214,7 +214,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Admin'
+url = 'https://dev.api.flyinglet.com/Admin'
 
 # POST 요청 보내기
 data = {
@@ -239,7 +239,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a4fe3dc0cca540d70b7858
@@ -247,7 +247,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Admin`
+`POST https://dev.api.flyinglet.com/Admin`
 
 
 ### Body(Json)
@@ -268,7 +268,7 @@ adminProfile | false | adminProfile
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Robots'
+url = 'https://dev.api.flyinglet.com/Robots'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -315,7 +315,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Robots`
+`GET https://dev.api.flyinglet.com/Robots`
 
 ### Path Parameters
 
@@ -334,7 +334,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Robots'
+url = 'https://dev.api.flyinglet.com/Robots'
 
 # POST 요청 보내기
 data = {
@@ -359,7 +359,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -375,7 +375,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Users`
+`POST https://dev.api.flyinglet.com/Robots`
 
 
 ### Body(Json)
@@ -396,7 +396,7 @@ onStateCustomImgUrl | false | onStateCustomImgUrl
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Users'
+url = 'https://dev.api.flyinglet.com/Users'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -606,7 +606,7 @@ print(data)
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Robots`
+`GET https://dev.api.flyinglet.com/Robots`
 
 
 ### Path Parameters
@@ -626,7 +626,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Users'
+url = 'https://dev.api.flyinglet.com/Users'
 
 # POST 요청 보내기
 data = [
@@ -653,7 +653,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -661,7 +661,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Users`
+`POST https://dev.api.flyinglet.com/Users`
 
 
 ### Body(Json)
@@ -682,7 +682,7 @@ success | false | success
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Profiles'
+url = 'https://dev.api.flyinglet.com/Profiles'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -727,7 +727,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Profiles`
+`GET https://dev.api.flyinglet.com/Profiles`
 
 
 ### Path Parameters
@@ -747,7 +747,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Profiles'
+url = 'https://dev.api.flyinglet.com/Profiles'
 
 # POST 요청 보내기
 data = {
@@ -770,7 +770,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -778,7 +778,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Profiles`
+`POST https://dev.api.flyinglet.com/Profiles`
 
 
 ### Body(Json)
@@ -798,7 +798,7 @@ location_id | false | location_id
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Models'
+url = 'https://dev.api.flyinglet.com/Models'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -850,7 +850,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Models`
+`GET https://dev.api.flyinglet.com/Models`
 
 
 ### Path Parameters
@@ -870,7 +870,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Models'
+url = 'https://dev.api.flyinglet.com/Models'
 
 # POST 요청 보내기
 data = {
@@ -901,7 +901,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -909,7 +909,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Models`
+`POST https://dev.api.flyinglet.com/Models`
 
 
 ### Body(Json)
@@ -936,7 +936,7 @@ modelId | false | modelId
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Locations'
+url = 'https://dev.api.flyinglet.com/Locations'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -981,7 +981,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Locations`
+`GET https://dev.api.flyinglet.com/Locations`
 
 
 ### Path Parameters
@@ -1001,7 +1001,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Locations'
+url = 'https://dev.api.flyinglet.com/Locations'
 
 # POST 요청 보내기
 data = {
@@ -1024,7 +1024,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -1032,7 +1032,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Locations`
+`POST https://dev.api.flyinglet.com/Locations`
 
 
 ### Body(Json)
@@ -1052,7 +1052,7 @@ locationId | false | locationId
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Sites'
+url = 'https://dev.api.flyinglet.com/Sites'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -1121,7 +1121,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Sites`
+`GET https://dev.api.flyinglet.com/Sites`
 
 
 ### Path Parameters
@@ -1141,7 +1141,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Sites'
+url = 'https://dev.api.flyinglet.com/Sites'
 
 # POST 요청 보내기
 data = {
@@ -1164,7 +1164,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -1172,7 +1172,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Sites`
+`POST https://dev.api.flyinglet.com/Sites`
 
 
 ### Body(Json)
@@ -1193,7 +1193,7 @@ success | false | success
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Summaries'
+url = 'https://dev.api.flyinglet.com/Summaries'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -1239,7 +1239,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Summaries`
+`GET https://dev.api.flyinglet.com/Summaries`
 
 
 ### Path Parameters
@@ -1259,7 +1259,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Summaries'
+url = 'https://dev.api.flyinglet.com/Summaries'
 
 # POST 요청 보내기
 data = {
@@ -1283,7 +1283,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -1300,7 +1300,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Summaries`
+`POST https://dev.api.flyinglet.com/Summaries`
 
 
 ### Body(Json)
@@ -1321,7 +1321,7 @@ videoCount | false | videoCount
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Registry'
+url = 'https://dev.api.flyinglet.com/Registry'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -1462,7 +1462,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Registry`
+`GET https://dev.api.flyinglet.com/Registry`
 
 
 ### Path Parameters
@@ -1482,7 +1482,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Registry/64a5081ec0cca540d70b788e'
+url = 'https://dev.api.flyinglet.com/Registry/64a5081ec0cca540d70b788e'
 
 # POST 요청 보내기
 data = {
@@ -1571,7 +1571,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Registry/{{User_Id}}`
+`POST https://dev.api.flyinglet.com/Registry/{{User_Id}}`
 
 
 ### Body(Json)
@@ -1634,7 +1634,7 @@ chipSN | false | chipSN
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Managers'
+url = 'https://dev.api.flyinglet.com/Managers'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -1682,7 +1682,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Managers`
+`GET https://dev.api.flyinglet.com/Managers`
 
 
 ### Path Parameters
@@ -1702,7 +1702,7 @@ id | false | DB에 저장된 '_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Managers'
+url = 'https://dev.api.flyinglet.com/Managers'
 
 # POST 요청 보내기
 data = {
@@ -1727,7 +1727,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -1735,7 +1735,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Managers`
+`POST https://dev.api.flyinglet.com/Managers`
 
 
 ### Body(Json)
@@ -1758,7 +1758,7 @@ sms_03 | false | sms_03
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Manufacturers'
+url = 'https://dev.api.flyinglet.com/Manufacturers'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -1803,7 +1803,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/Manufacturers`
+`GET https://dev.api.flyinglet.com/Manufacturers`
 
 
 ### Path Parameters
@@ -1817,24 +1817,22 @@ Parameter | Default | Description
 id | false | DB에 저장된 '_id' 값.
 
 
-## Create Users collection 
+## Create Manufacturers collection 
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Users'
+url = 'https://dev.api.flyinglet.com/Manufacturers'
 
 # POST 요청 보내기
 data = [
     {
-        "email": "uram@naver.com",
-        "password": "1234",
-        "role": "admin",
-        "userName": "uram",
-        "phoneNumber": "01012345678",
-        "login": "1",
-        "success": "1"
+        "code": "INTE",
+        "contact": "02-2051-0978",
+        "manufacturer": "INTEGRIT",
+        "manufacturerAddress": "서울 강남구 삼성로 547 (삼성동, BK타워)",
+        "manufacturerHomepage": "integrit.ai"
     }
 ]
 
@@ -1850,7 +1848,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -1858,7 +1856,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Users`
+`POST https://dev.api.flyinglet.com/Manufacturers`
 
 
 ### Body(Json)
@@ -1879,7 +1877,7 @@ success | false | success
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/LoginDataGroup'
+url = 'https://dev.api.flyinglet.com/LoginDataGroup'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -1933,7 +1931,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/LoginDataGroup`
+`GET https://dev.api.flyinglet.com/LoginDataGroup`
 
 
 ### Path Parameters
@@ -1947,26 +1945,32 @@ Parameter | Default | Description
 id | false | DB에 저장된 '_id' 값.
 
 
-## Create Users collection 
+## Create LoginDataGroup collection 
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/Users'
+url = 'https://dev.api.flyinglet.com/LoginDataGroup'
 
 # POST 요청 보내기
-data = [
-    {
-        "email": "uram@naver.com",
-        "password": "1234",
-        "role": "admin",
-        "userName": "uram",
-        "phoneNumber": "01012345678",
-        "login": "1",
-        "success": "1"
+data = {
+        "Admin": "[]",
+        "Locations": "['6389a70e16beaa76e42a2948','6389a71c16beaa76e42a294d']",
+        "LoginDataGroup": "[]",
+        "Managers": "['63bcc3c181cd3069ff42fd4b]",
+        "Manufacturers": "['63c66b3987bc4b5508de6c67']",
+        "Models": "['63ad25c6a2116f9b697cfed4','63ad25d1a2116f9b697cfed7']",
+        "Profiles": "['6389a37016beaa76e42a284c','6389a38816beaa76e42a2856']",
+        "Registry": "['63c10ba26ce1ed85231fffd8']",
+        "Robots": "['6389a31716beaa76e42a2821','6389a31e16beaa76e42a2826']",
+        "Sites": "['6389a4ae16beaa76e42a28b7']",
+        "Summaries": "['6389a4e716beaa76e42a28cb']",
+        "Users": "['638ead49375c1b4d5eeabc71']",
+        "email": "user@email.com",
+        "registry": "[]"
     }
-]
+
 
 response = requests.post(url, json=data)
 # 응답 상태 코드 확인
@@ -1980,7 +1984,7 @@ print(data)
 
 ```
 
-> The above command returns TEXT structured like this:
+> The above command returns Text structured like this:
 
 ```text
 64a5081ec0cca540d70b788e
@@ -1988,19 +1992,188 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/Users`
+`POST https://dev.api.flyinglet.com/LoginDataGroup`
 
 
 ### Body(Json)
 
 Parameter | Default | Description
 --------- | ------- | -----------
+Admin | false | Admin
+Locations | false | Locations
+LoginDataGroup | false | LoginDataGroup
+Managers | false | Managers
+Manufacturers | false | Manufacturers
+Models | false | Models
+Profiles | false | Profiles
+Registry | false | Registry
+Robots | false | Robots
+Sites | false | Sites
+Summaries | false | Summaries
+Users | false | Users
 email | false | email
-password | false | password
-role | false | role
-phoneNumber | false | phoneNumber
-login | false | login
-success | false | success
+registry | false | registry
+
+# Business Logic
+
+## Get Robot info
+
+```python
+import requests
+
+# URL
+url = 'https://dev.api.flyinglet.com/Registry/robot_id/robot_cubrick_01_v2'
+
+# GET 요청 보내기
+response = requests.get(url)
+
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+    "data": {
+        "_id": {
+            "$oid": "63c7bf02c87c271cea17d0e8"
+        },
+        "alarm_01": "False",
+        "alarm_02": "0",
+        "alarm_03": "False",
+        "authentication_timestamp": "1684117946",
+        "battery": "",
+        "chipSN": "0x42fc3212",
+        "createAt": "2023-01-18  6:42:26 PM",
+        "current_covid_info": {},
+        "current_waypoint_id": "",
+        "deviceName": "더현대큐브릭1",
+        "deviceNum": "1",
+        "drive_distance": "",
+        "drive_status": "",
+        "drive_time": "",
+        "fCode": "INTE-CUB-04184-012301-00000",
+        "getnode": "91769392985",
+        "isActive": "True",
+        "kcCertificationNumber": "ICRT-TR-E223277-0A",
+        "location_id": "",
+        "mac_address": "00:15:5d:e1:cf:59",
+        "machine": "AMD64",
+        "mainAbility": [
+            "spcfunc-aichat"
+        ],
+        "manager_01": "",
+        "manager_02": "전기만",
+        "manager_03": "",
+        "manufacturer": "INTEGRIT",
+        "manufacturerCode": "INTE",
+        "map_id": "",
+        "min": "",
+        "modelCode": "CUB",
+        "modelImg": {
+            "off": "https://app.flyinglet.com/images/robot_model/integrit/cubrick_base_off.png",
+            "on": "https://app.flyinglet.com/images/robot_model/integrit/cubrick_thehyundai.png"
+        },
+        "modelName": "CUB-DS210V",
+        "modelNumber": "",
+        "modelVersion": "1",
+        "network": "",
+        "node": "DESKTOP-QM8726M",
+        "operatingLocation": "더현대서울1F",
+        "photo_log": {
+            "1684921527": {
+                "43269": {
+                    "drive_info": null,
+                    "drive_status": "Stop",
+                    "map_id": "thehyundai_1f",
+                    "pose": {
+                        "rotate": -32.27673803755728,
+                        "x": 1213,
+                        "y": 78
+                    },
+                    "robot_id": "robot_cubrick_01_v2",
+                    "store_id": 3,
+                    "timestamp": 1684921527.43269,
+                    "traffic": 2
+                }
+            }
+        },
+        "platform": "Windows-10-10.0.25352-SP0",
+        "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+        "productCode": "CUB",
+        "productDate": "",
+        "productName": "CUBRICK",
+        "realRobotID": "",
+        "release": "10",
+        "robot_id": "robot_cubrick_01_v2",
+        "robot_status": "",
+        "secretKey": "1234",
+        "serialNumber": "11000",
+        "sms_01": "",
+        "sms_02": "8201085850124",
+        "sms_03": "",
+        "specialFunctions": [
+            {
+                "id": "spcfunc-aichat",
+                "mainType": 1,
+                "value": 1
+            },
+            {
+                "id": "spcfunc-docent",
+                "mainType": 0,
+                "value": 1
+            },
+            {
+                "id": "spcfunc-hightemp",
+                "mainType": 0,
+                "value": 1
+            }
+        ],
+        "speed": "",
+        "subAbility": [
+            "spcfunc-docent",
+            "spcfunc-hightemp"
+        ],
+        "system": "Windows",
+        "total_distance": "",
+        "total_time": "",
+        "uname": "Windows",
+        "userID": "",
+        "version": "10.0.25352"
+    }
+}
+```
+
+`Authorization: meowmeowmeow`
+
+<aside class="notice">
+
+You must replace <code>meowmeowmeow</code> with your personal Access token.
+
+</aside>
+
+
+### HTTP Request
+
+`GET https://dev.api.flyinglet.com/Registry/robot_id/{{robot_id}}`
+
+
+### Path Parameters
+
+Path 의 '{{robot_id}}'와 collection 내 'robot_id' 의 값이 일치하는 document 조회
+
+Parameter | Default | Description
+--------- | ------- | -----------
+robot_id | false | Robot 등록시 저장된 'robot_id' 값.
+
 
 
 ## Get Robots Data Stream
@@ -2009,7 +2182,7 @@ success | false | success
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/stream'
+url = 'https://dev.api.flyinglet.com/stream'
 
 # GET 요청 보내기
 response = requests.get(url)
@@ -2071,7 +2244,7 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 ### HTTP Request
 
-`GET https://dev.flyinglet.com/stream`
+`GET https://dev.api.flyinglet.com/stream`
 
 
 ## Get One Robot Data Stream
@@ -2343,166 +2516,6 @@ You must replace <code>meowmeowmeow</code> with your personal Access token.
 
 `GET https://dev.api.flyinglet.com/stream/robot?robot_id={{robot_id}}`
 
-## Get Robot info
-
-```python
-import requests
-
-# URL
-url = 'https://dev.api.flyinglet.com/Registry/robot_id/robot_cubrick_01_v2'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-    "data": {
-        "_id": {
-            "$oid": "63c7bf02c87c271cea17d0e8"
-        },
-        "alarm_01": "False",
-        "alarm_02": "0",
-        "alarm_03": "False",
-        "authentication_timestamp": "1684117946",
-        "battery": "",
-        "chipSN": "0x42fc3212",
-        "createAt": "2023-01-18  6:42:26 PM",
-        "current_covid_info": {},
-        "current_waypoint_id": "",
-        "deviceName": "더현대큐브릭1",
-        "deviceNum": "1",
-        "drive_distance": "",
-        "drive_status": "",
-        "drive_time": "",
-        "fCode": "INTE-CUB-04184-012301-00000",
-        "getnode": "91769392985",
-        "isActive": "True",
-        "kcCertificationNumber": "ICRT-TR-E223277-0A",
-        "location_id": "",
-        "mac_address": "00:15:5d:e1:cf:59",
-        "machine": "AMD64",
-        "mainAbility": [
-            "spcfunc-aichat"
-        ],
-        "manager_01": "",
-        "manager_02": "전기만",
-        "manager_03": "",
-        "manufacturer": "INTEGRIT",
-        "manufacturerCode": "INTE",
-        "map_id": "",
-        "min": "",
-        "modelCode": "CUB",
-        "modelImg": {
-            "off": "https://app.flyinglet.com/images/robot_model/integrit/cubrick_base_off.png",
-            "on": "https://app.flyinglet.com/images/robot_model/integrit/cubrick_thehyundai.png"
-        },
-        "modelName": "CUB-DS210V",
-        "modelNumber": "",
-        "modelVersion": "1",
-        "network": "",
-        "node": "DESKTOP-QM8726M",
-        "operatingLocation": "더현대서울1F",
-        "photo_log": {
-            "1684921527": {
-                "43269": {
-                    "drive_info": null,
-                    "drive_status": "Stop",
-                    "map_id": "thehyundai_1f",
-                    "pose": {
-                        "rotate": -32.27673803755728,
-                        "x": 1213,
-                        "y": 78
-                    },
-                    "robot_id": "robot_cubrick_01_v2",
-                    "store_id": 3,
-                    "timestamp": 1684921527.43269,
-                    "traffic": 2
-                }
-            }
-        },
-        "platform": "Windows-10-10.0.25352-SP0",
-        "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
-        "productCode": "CUB",
-        "productDate": "",
-        "productName": "CUBRICK",
-        "realRobotID": "",
-        "release": "10",
-        "robot_id": "robot_cubrick_01_v2",
-        "robot_status": "",
-        "secretKey": "1234",
-        "serialNumber": "11000",
-        "sms_01": "",
-        "sms_02": "8201085850124",
-        "sms_03": "",
-        "specialFunctions": [
-            {
-                "id": "spcfunc-aichat",
-                "mainType": 1,
-                "value": 1
-            },
-            {
-                "id": "spcfunc-docent",
-                "mainType": 0,
-                "value": 1
-            },
-            {
-                "id": "spcfunc-hightemp",
-                "mainType": 0,
-                "value": 1
-            }
-        ],
-        "speed": "",
-        "subAbility": [
-            "spcfunc-docent",
-            "spcfunc-hightemp"
-        ],
-        "system": "Windows",
-        "total_distance": "",
-        "total_time": "",
-        "uname": "Windows",
-        "userID": "",
-        "version": "10.0.25352"
-    }
-}
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.api.flyinglet.com/Registry/robot_id/{{robot_id}}`
-
-
-### Path Parameters
-
-Path 의 '{{robot_id}}'와 collection 내 'robot_id' 의 값이 일치하는 document 조회
-
-Parameter | Default | Description
---------- | ------- | -----------
-robot_id | false | Robot 등록시 저장된 'robot_id' 값.
-
-
-# Business Logic
 
 ## Admin Sign in 
 
@@ -2510,7 +2523,7 @@ robot_id | false | Robot 등록시 저장된 'robot_id' 값.
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
+url = 'https://dev.api.flyinglet.com/signin/Admin'
 
 # POST 요청 보내기
 data = {
@@ -2550,7 +2563,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/signin/Admin`
+`POST https://dev.api.flyinglet.com/signin/Admin`
 
 
 ### Body(Json)
@@ -2566,7 +2579,7 @@ password | false | Admin password
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/signin'
+url = 'https://dev.api.flyinglet.com/signin'
 
 # POST 요청 보내기
 data = {
@@ -2718,7 +2731,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/signin`
+`POST https://dev.api.flyinglet.com/signin`
 
 
 ### Body(Json)
@@ -2735,7 +2748,7 @@ password | false | User password
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/check_password'
+url = 'https://dev.api.flyinglet.com/check_password'
 
 # POST 요청 보내기
 data = {
@@ -2765,7 +2778,7 @@ print(data)
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/signin/Admin`
+`POST https://dev.api.flyinglet.com/signin/Admin`
 
 
 ### Body(Json)
@@ -2775,18 +2788,557 @@ Parameter | Default | Description
 email | false | User email
 password | false | User password
 
-## Admin Sign in 
+## Check Duplicate values 
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
+url = 'https://dev.api.flyinglet.com/dupcheck/Users/email'
 
 # POST 요청 보내기
 data = {
     "email":"admin@email.com",
-    "password":"password"
+}
+
+response = requests.post(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```Text
+사용가능
+```
+```Text
+중복
+```
+
+### HTTP Request
+
+`POST https://dev.api.flyinglet.com/dupcheck/{{collection}}/{{field}}`
+
+
+### Path
+
+Parameter | Default | Description
+--------- | ------- | -----------
+collection | false | collection
+field | false | field
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+field | false | field
+
+
+
+## User Sign up
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/signup'
+
+# POST 요청 보내기
+data = {
+    "email": "uram@naver.com",
+    "password": "1234",
+    "role": "admin",
+    "userName": "uram",
+    "phoneNumber": "01012345678",
+    "login": "1",
+    "success": "1"
+}
+
+response = requests.post(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```Text
+
+```
+
+### HTTP Request
+
+`POST https://dev.api.flyinglet.com/signup`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+email | false | email
+password | false | password
+role | false | role
+phoneNumber | false | phoneNumber
+login | false | login
+success | false | success
+
+
+## Admin Sign up 
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/signup/Admin'
+
+# POST 요청 보내기
+data = {
+    "email": "new_admin@integrit.ai",
+    "password": "1234",
+    "role": "일반관리자",
+    "phoneNumber": "12341234",
+    "adminName": "장수민2",
+    "adminId": "63894ed9390843c9e175c20b",
+    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
+}
+
+response = requests.post(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```Text
+
+```
+
+### HTTP Request
+
+`POST https://dev.api.flyinglet.com/signup/Admin`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+email | false | email
+password | false | password
+role | false | role
+phoneNumber | false | phoneNumber
+adminId | false | adminId
+adminProfile | false | adminProfile
+
+
+## File Upload 
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/upload'
+
+# POST 요청 보내기
+data = "image.jpg"
+
+response = requests.post(url, files=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```text
+https://robot-develop-server.s3.ap-northeast-2.amazonaws.com/image.jpg
+```
+
+### HTTP Request
+
+`POST https://dev.api.flyinglet.com/upload`
+
+### Body(Files)
+
+ContentType='image/jpeg'
+
+Parameter | Default | Description
+--------- | ------- | -----------
+FilePath | false | FilePath
+
+
+## Send SMS cert-code
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/sms'
+
+# POST 요청 보내기
+data = {
+    "email": "jsmsumin2@integrit.ai",
+    "phoneNumber": "01012341234"
+}
+
+response = requests.post(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```text
+3215we6
+```
+
+### HTTP Request
+
+`POST https://dev.api.flyinglet.com/sms`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+email | false | email
+phoneNumber | false | phoneNumber
+
+## Check email cert-code
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/codecheck'
+
+# POST 요청 보내기
+data = {
+    "email":"admin@email.com",
+    "certCode":"423142"
+}
+
+response = requests.post(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```text
+true
+```
+```text
+false
+```
+
+1) email 로 전송된 인증코드는 user_login_system 에 인증시간 동안 저장
+2) 제한 시간이 지나면 자동 삭제되어 인증이 유효하지 않음
+
+
+### HTTP Request
+
+`POST https://dev.api.flyinglet.com/codecheck`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+email | false | email
+certCode | false | certCode
+
+## Send email cert code
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/email'
+
+# POST 요청 보내기
+data = {
+    "email":"admin@email.com"
+}
+
+response = requests.post(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```text
+354354
+```
+
+### HTTP Request
+
+`PATCH https://dev.api.flyinglet.com/signin/Admin`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+email | false | Admin email
+
+## Send Robot device info 
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/send-device-certi'
+
+# POST 요청 보내기
+data = {
+    "fCode":"admin@email.com",
+    "secretKey":"password",
+    "mac_address": "mac_address",
+    "authentication_timestamp": "authentication_timestamp",
+    "getnode": "getnode",
+    "machine": "machine",
+    "node": "node",
+    "platform": "platform",
+    "processor": "processor",
+    "release": "release",
+    "system": "system",
+    "version": "version",
+    "uname": "uname"
+}
+
+response = requests.post(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```Text
+
+```
+
+1) f-code 와 secret key 가 등록된 정보와 일치하면 해당 기기 정보를 전송
+2) DB에 데이터 덮어 쓰기 저장
+
+### HTTP Request
+
+`PATCH https://dev.api.flyinglet.com/send-device-certi`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+fCode | false | fCode
+secretKey | false | secretKey
+mac_address | false | mac_address
+authentication_timestamp | false | authentication_timestamp
+getnode | false | getnode
+machine | false | machine
+node | false | node
+platform | false | platform
+processor | false | processor
+release | false | release
+system | false | system
+version | false | version
+uname | false | uname
+
+
+## Get Device info
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/check-device'
+
+# PATCH 요청 보내기
+data = {
+    "fCode":"fCode"
+}
+
+response = requests.patch(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns JSON structured like this:
+
+```json
+ "더현대서울1F",
+        "serialNumber": "11000",
+        "subAbility": [
+            "spcfunc-docent",
+            "spcfunc-hightemp"
+        ],
+        "specialFunctions": [
+            {
+                "id": "spcfunc-aichat",
+                "mainType": 1,
+                "value": 1
+            },
+            {
+                "id": "spcfunc-docent",
+                "mainType": 0,
+                "value": 1
+            },
+            {
+                "id": "spcfunc-hightemp",
+                "mainType": 0,
+                "value": 1
+            }
+        ],
+        "fCode": "INTE-CUB-04184-012301-00000",
+        "manufacturerCode": "INTE",
+        "productCode": "CUB",
+        "modelCode": "CUB",
+        "createAt": "2023-01-18  6:42:26 PM",
+        "productDate": "",
+        "manager_01": "",
+        "sms_01": "",
+        "manager_02": "전기만",
+        "sms_02": "8201085850124",
+        "manager_03": "",
+        "sms_03": "",
+        "userID": "",
+        "location_id": "",
+        "realRobotID": "",
+        "battery": "",
+        "current_covid_info": {},
+        "current_waypoint_id": "",
+        "drive_distance": "",
+        "drive_status": "",
+        "drive_time": "",
+        "map_id": "",
+        "network": "",
+        "robot_id": "robot_cubrick_01_v2",
+        "robot_status": "",
+        "speed": "",
+        "total_distance": "",
+        "total_time": "",
+        "isActive": "True",
+        "alarm_01": "False",
+        "alarm_02": "0",
+        "alarm_03": "False",
+        "mac_address": "00:15:5d:e1:cf:59",
+        "secretKey": "1234",
+        "authentication_timestamp": "1684117946",
+        "getnode": "91769392985",
+        "machine": "AMD64",
+        "node": "DESKTOP-QM8726M",
+        "platform": "Windows-10-10.0.25352-SP0",
+        "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+        "release": "10",
+        "system": "Windows",
+        "uname": "Windows",
+        "version": "10.0.25352",
+        "photo_log": {
+            "1684921527": {
+                "43269": {
+                    "robot_id": "robot_cubrick_01_v2",
+                    "pose": {
+                        "x": 1213,
+                        "y": 78,
+                        "rotate": -32.27673803755728
+                    },
+                    "store_id": 3,
+                    "timestamp": 1684921527.43269,
+                    "map_id": "thehyundai_1f",
+                    "drive_info": null,
+                    "drive_status": "Stop",
+                    "traffic": 2
+                }
+            }
+        },
+        "chipSN": "0x42fc3212"
+    }
+```
+
+### HTTP Request
+
+`POST https://dev.api.flyinglet.com/check-device`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+fCode | false | fCode
+
+
+## chip_sn
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/chip_sn'
+
+# POST 요청 보내기
+data = {
+    "sn":"234i23pj4p234po23"
 }
 
 response = requests.post(url, json=data)
@@ -2805,44 +3357,83 @@ print(data)
 
 ```json
 {
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
+    "authentication": True,
+    "모델명": "airpath"
+}
+```
+```json
+{
+    "authentication": False
 }
 ```
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/signin/Admin`
+`POST https://dev.api.flyinglet.com/chip_sn`
 
 
 ### Body(Json)
 
 Parameter | Default | Description
 --------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
+sn | false | serial number
 
-## Admin Sign in 
+
+## Device Sign in
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
+url = 'https://dev.api.flyinglet.com/signin-device'
 
 # POST 요청 보내기
 data = {
-    "email":"admin@email.com",
-    "password":"password"
+    "fCode":"123456",
+    "secretKey":"1234abcd"
+}
+
+response = requests.post(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```text
+
+```
+
+### HTTP Request
+
+`POST https://dev.api.flyinglet.com/signin-device`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+sn | false | serial number
+
+
+## Get Owner-Device info
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/fcode-device'
+
+# POST 요청 보내기
+data = {
+    "fCode":"fCode"
 }
 
 response = requests.post(url, json=data)
@@ -2860,45 +3451,256 @@ print(data)
 > The above command returns JSON structured like this:
 
 ```json
-{
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
+    {
+        "_id": {
+            "$oid": "638ead49375c1b4d5eeabc71"
+        },
+        "email": "lotteworld_adventure@flyinglet.com",
+        "password": "N949kh5U",
+        "role": "admin",
+        "userName": "롯데월드",
+        "phoneNumber": "01012345678",
+        "managedRobotIds": [
+            "6389a31716beaa76e42a2821"
+        ],
+        "createAt": "2022-12-26 06:26:46",
+        "loginProfile": {
+            "success": 1,
+            "login": 1,
+            "owner_id": "00g3iat15h9RAJAcu5d7",
+            "user": {
+                "user_id": "00u3ias75zYoF6hTb5d7",
+                "profile": {
+                    "name": "롯데월드",
+                    "profile_img": "https://dolseokmaru.flyinglet.com/images/lotte_user.png"
+                }
+            },
+            "group_info": {
+                "name": "롯데월드 어드벤처",
+                "address": "서울 송파구 올림픽로 240",
+                "profile_img": "https://dolseokmaru.flyinglet.com/images/lotte_world.jpeg"
+            },
+            "robot_list": [
+                {
+                    "robot_id": "cubrick_01_00_00",
+                    "map_id": "lotteworld_museum",
+                    "port": 21000
+                },
+                {
+                    "robot_id": "dconic_0124_112351",
+                    "map_id": "lotteworld_museum",
+                    "port": 21001
+                }
+            ],
+            "managedRobots": [
+                {
+                    "_id": {
+                        "$oid": "6389a31e16beaa76e42a2826"
+                    },
+                    "serialNum": "2jSTYTcPFziudha7qpaQ",
+                    "profile_id": "6389a38816beaa76e42a2856",
+                    "profile": {
+                        "_id": {
+                            "$oid": "6389a38816beaa76e42a2856"
+                        },
+                        "alias": "CUBRICK_LOTTE",
+                        "onStateCustomImgUrl": "/robot_model/cubrick/robot_lotteworld.png",
+                        "offStateCustomImgUrl": "/robot_model/cubrick/robot_cubrick_off.png",
+                        "model_id": "63ad25d1a2116f9b697cfed7",
+                        "location_id": "6389a71c16beaa76e42a294d"
+                    }
+                },
+                {
+                    "_id": {
+                        "$oid": "6389a31716beaa76e42a2821"
+                    },
+                    "serialNum": "259hSADFjGuhoQb9EMB9",
+                    "profile_id": "6389a37016beaa76e42a284c",
+                    "createAt": "",
+                    "profile": {
+                        "_id": {
+                            "$oid": "6389a37016beaa76e42a284c"
+                        },
+                        "alias": "D.CORNIC_LOTTE",
+                        "onStateCustomImgUrl": "/robot_model/dconic_v1/base.png",
+                        "offStateCustomImgUrl": "/robot_model/dconic_v1/base_off.png",
+                        "model_id": "63ad25c6a2116f9b697cfed4",
+                        "location_id": "6389a70e16beaa76e42a2948",
+                        "createAt": " "
+                    }
+                }
+            ],
+            "map_list": [
+                {
+                    "id": "lotteworld_adventure",
+                    "name": "롯데월드 어드벤처"
+                },
+                {
+                    "id": "lotteworld_folk_museum",
+                    "name": "롯데월드 민속박물관"
+                }
+            ]
+        },
+        "group_info": {
+            "address": "서울 송파구 올림픽로 240",
+            "name": "롯데월드 어드벤처",
+            "profile_img": "https://dolseokmaru.flyinglet.com/images/lotte_world.jpeg"
+        },
+        "login": "1",
+        "map_list": [
+            {
+                "id": "lotteworld_adventure",
+                "name": "롯데월드 어드벤처"
+            },
+            {
+                "id": "lotteworld_folk_museum",
+                "name": "롯데월드 민속박물관"
+            }
+        ],
+        "owner_id": "00g3iat15h9RAJAcu5d7",
+        "robot_list": [
+            {
+                "map_id": "lotteworld_museum",
+                "oid": "63dc6f9afcdf6a52ae5f5332",
+                "port": 21000,
+                "robot_id": "cubrick_01_00_00"
+            },
+            {
+                "map_id": "lotteworld_museum",
+                "oid": "63dc6f9afcdf6a52ae5f5332",
+                "port": 21001,
+                "robot_id": "cubrick_01_00_00"
+            },
+            {
+                "map_id": "lotteworld_museum",
+                "oid": "63dc7008fcdf6a52ae5f5346",
+                "port": 21002,
+                "robot_id": "dconic_0124_112351"
+            }
+        ],
+        "success": "1",
+        "user": {
+            "profile": {
+                "name": "롯데월드",
+                "profile_img": "https://robot-develop-server.s3.ap-northeast-2.amazonaws.com/2023-02-09-15:31:30_5.png",
+                "uploaded_profile_img": "https://robot-develop-server.s3.ap-northeast-2.amazonaws.com/2023-02-09-15:31:30_5.png"
+            },
+            "user_id": "00u3ias75zYoF6hTb5d7"
+        },
+        "site_id": "6389a4ae16beaa76e42a28b7",
+        "managedRobots": [
+            {
+                "_id": {
+                    "$oid": "6389a31716beaa76e42a2821"
+                },
+                "profile_id": "6389a37016beaa76e42a284c",
+                "createAt": "2022-11-01",
+                "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
+                "alias": " ",
+                "location_id": " ",
+                "model_id": " ",
+                "offStateCustomImgUrl": " ",
+                "onStateCustomImgUrl": " ",
+                "profile": [
+                    {
+                        "_id": {
+                            "$oid": "6389a37016beaa76e42a284c"
+                        },
+                        "alias": "D.CORNIC_LOTTE",
+                        "onStateCustomImgUrl": "/robot_model/dconic_v1/base.png",
+                        "offStateCustomImgUrl": "/robot_model/dconic_v1/base_off.png",
+                        "model_id": "63ad25c6a2116f9b697cfed4",
+                        "location_id": "6389a70e16beaa76e42a2948",
+                        "createAt": " "
+                    }
+                ]
+            }
+        ],
+        "subUserIDs": [
+            "00g1z852ki8nSmOlP5d7",
+            "00g3ukdrjuYT8Hg4L5d7",
+            "hyundaipangyo",
+            "hyundaitrade",
+            "coex",
+            "ssg",
+            "skt"
+        ],
+        "hashed": "24326224313224314e4f7969786d23423449635a5638745275716633612f3075344869787a72534969717773325a786e78414c7344476c3639767536537775"
+    }
+
 ```
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/signin/Admin`
+`POST https://dev.api.flyinglet.com/fcode-device`
 
 
 ### Body(Json)
 
 Parameter | Default | Description
 --------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
+fCode | false | fCode
 
-## Admin Sign in 
+
+## Change password and Send SMS
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
+url = 'https://dev.api.flyinglet.com/update/password'
 
 # POST 요청 보내기
 data = {
-    "email":"admin@email.com",
-    "password":"password"
+    "email":"email"
+}
+
+response = requests.patch(url, json=data)
+# 응답 상태 코드 확인
+status_code = response.status_code
+print(f'Status Code: {status_code}')
+
+# 응답 본문 출력
+data = response.json()
+print('Response Body:')
+print(data)
+
+```
+
+> The above command returns Text structured like this:
+
+```json
+
+```
+
+1) email이 일치하는 아이디의 비밀번호를 임시 비밀번호로 변경
+2) 임시 비밀번호를 저장된 휴대폰 번호로 SMS 전송
+
+### HTTP Request
+
+`PATCH https://dev.api.flyinglet.com/update/password`
+
+
+### Body(Json)
+
+Parameter | Default | Description
+--------- | ------- | -----------
+email | false | email
+
+
+## Blackbox
+
+```python
+import requests
+
+# URL 
+url = 'https://dev.api.flyinglet.com/blackbox'
+
+# POST 요청 보내기
+data = {
+    "from_date":"234i23pj4p234po23",
+    "to_date":"234i23pj4p234po23",
+    "robot_id":"234i23pj4p234po23"
 }
 
 response = requests.post(url, json=data)
@@ -2916,45 +3718,263 @@ print(data)
 > The above command returns JSON structured like this:
 
 ```json
-{
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
+[{
+  "create_at": "2023-07-04T06:58:11+09:00",
+  "covid_info": {
+    "idx": false,
+    "robot_id": false,
+    "map_id": false,
+    "store_id": false,
+    "position_x": false,
+    "position_y": false,
+    "rotate": false,
+    "location_desc": false,
+    "temp": false,
+    "mask_flag": false,
+    "image": false,
+    "timstamp": false,
+    "year": false,
+    "month": false,
+    "date": false,
+    "week_day": false,
+    "hour": false,
+    "timestamp": false,
+    "day": false,
+    "day_of_week": false,
+    "description": false,
+    "route_log_id": false,
+    "lap_log_id": false,
+    "section_log_id": false,
+    "status": false
+  },
+  "drive_section_log": {
+    "section_log_id": false,
+    "robot_id": false,
+    "drive_time_id": false,
+    "route_log_id": false,
+    "lap_log_id": false,
+    "current_index": false,
+    "start_timestamp": false,
+    "end_timestamp": false,
+    "drive_time": false,
+    "drive_distance": false,
+    "resource": false,
+    "update_at": false
+  },  
+  "lap_drive_log": {
+    "lap_log_id": false,
+    "route_log_id": false,
+    "repetition": false,
+    "drive_time": false,
+    "drive_distance": false,
+    "resource": false,
+    "start_timestamp": false,
+    "end_timestamp": false,
+    "update_at": false,
+    "robot_id": false
+  },
+  "map_store": {
+    "idx": false,
+    "map_idx": false,
+    "map_id": false,
+    "store_id": false,
+    "store_name": false,
+    "center_x": false,
+    "center_y": false,
+    "bound": false
+  },
+  "notification_token": {
+    "id": false,
+    "token": false,
+    "group_id": false,
+    "invalid": false,
+    "user_agent": false,
+    "checked_at": false
+  },
+  "red_zone": {
+    "id": false,
+    "map_id": false,
+    "name": false,
+    "state": false,
+    "creator": false,
+    "points": false,
+    "update_at": false,
+    "color": false
+  },
+  "robot_base_status": {
+    "staus_idx": 37478894.0,
+    "robot_id": "cubrick_01_00_00",
+    "speed": 0.394,
+    "battery": 48.0,
+    "network": "GOOD",
+    "drive_status": "Driving",
+    "current_way_point_id": "lotte_folk_220719_cruzing_220728.csv",
+    "map_id": "lotte_folk_220719",
+    "timestamp": 1688453891021.0
+  },
+  "robot_drive_info": {
+    "drive_idx": false,
+    "robot_id": false,
+    "robot_idx": false,
+    "start_time_stamp": false,
+    "start_year": false,
+    "start_month": false,
+    "start_date": false,
+    "start_week_day": false,
+    "start_time": false,
+    "end_time_stamp": false,
+    "end_time": false,
+    "drive_time": false,
+    "drive_distance": false,
+    "average_speed": false,
+    "max_speed": false,
+    "min_speed": false,
+    "total_distance": false,
+    "total_time": false,
+    "map_id": false
+  },
+  "robot_info": {
+    "idx": false,
+    "mac_address": false,
+    "name": false,
+    "hw_ver": false,
+    "sw_ver": false,
+    "access_scope": false,
+    "owner": false,
+    "type": false,
+    "update_at": false,
+    "delete_at": false
+  },
+  "robot_region": {
+    "traffic_idx": false,
+    "region_id": false,
+    "map_id": false,
+    "position_x": false,
+    "position_y": false,
+    "width": false,
+    "height": false
+  },
+  "route_drive_log": {
+    "route_log_id": false,
+    "way_point_id": false,
+    "robot_id": false,
+    "drive_time": false,
+    "drive_distance": false,
+    "start_timestamp": false,
+    "end_timestamp": false,
+    "resource": false,
+    "update_at": false,
+    "map_id": false,
+    "way_point_repetition": false
+  },
+  "schedule": {
+    "index": false,
+    "id": false,
+    "map_id": false,
+    "title": false,
+    "state": false,
+    "week_days": false,
+    "robots": false,
+    "update_at": false,
+    "cron_format": false,
+    "timezone": false,
+    "timer_timer_index": false,
+    "timer_index": false,
+    "timer_order_weight": false,
+    "timer_hours": false,
+    "timer_minutes": false,
+    "timer_repeats": false,
+    "timer_path_id": false,
+    "timer_go_charger": false,
+    "timer_update_at": false,
+    "timer_cron_format": false
+  },
+  "schedule_timer": {
+    "index": false,
+    "schedule_index": false,
+    "order_weight": false,
+    "hours": false,
+    "minutes": false,
+    "repeats": false,
+    "path_id": false,
+    "go_charger": false,
+    "update_at": false,
+    "cron_format": false
+  },
+  "traffic_count": {
+    "id": false,
+    "robot_id": false,
+    "map_id": false,
+    "count": false,
+    "start_utc_hours": false,
+    "start_timestamp": false,
+    "month": false,
+    "weekOfDay": false,
+    "hour": false,
+    "update_at": false,
+    "add_count": false
+  },
+    "visitor_count": {
+    "id": 4250108.0,
+    "robot_id": "robot_cubrick_01_v2",
+    "map_id": "thehyundai_1f",
+    "count": "1",
+    "duration": 5.0,
+    "start_timestamp": 1688453891.0,
+    "update_at": false,
+    "day_of_week": 2.0,
+    "hour": 6.0,
+    "route_log_id": -1.0,
+    "lap_log_id": -1.0,
+    "section_log_id": -1.0,
+    "position": {
+      "x": 1414,
+      "y": 81,
+      "rotate": -56.30890718111302
+    }
+  },
+  "way_point_list": {
+    "idx": false,
+    "way_point_id": false,
+    "name": false,
+    "map_id": false,
+    "version": false,
+    "points": false,
+    "update_at": false,
+    "drive_distance": false,
+    "drive_time": false,
+    "id_color": false,
+    "avaliable": false
+  }
+}]
 ```
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/signin/Admin`
+`POST https://dev.api.flyinglet.com/blackbox`
 
 
 ### Body(Json)
 
 Parameter | Default | Description
 --------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
+from_date | false | from_date
+to_date | false | to_date
+robot_id | false | robot_id
 
-## Admin Sign in 
+
+
+## Create Photo Log
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
+url = 'https://dev.api.flyinglet.com/photolog'
 
 # POST 요청 보내기
 data = {
-    "email":"admin@email.com",
-    "password":"password"
+    "robot_id":"robot_id"
 }
 
 response = requests.post(url, json=data)
@@ -2969,51 +3989,35 @@ print(data)
 
 ```
 
-> The above command returns JSON structured like this:
+> The above command returns Text structured like this:
 
-```json
-{
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
+```text
 ```
+POST 요청 시 https://dolseokmaru.flyinglet.com/robot/current_pose?robot_id={robot_id} 의 데이터를 'photo_log' Collection 에 저장
 
 ### HTTP Request
 
-`POST https://dev.flyinglet.com/signin/Admin`
+`POST https://dev.api.flyinglet.com/photolog`
 
 
 ### Body(Json)
 
 Parameter | Default | Description
 --------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
+robot_id | false | robot_id
 
-## Admin Sign in 
+
+## Get Photo log
 
 ```python
 import requests
 
 # URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
+url = 'https://dev.api.flyinglet.com/photolog/list?robot_id=INTE-CUB-04184-012301&start_timestamp=1684092639290&end_timestamp=1684093091976'
 
-# POST 요청 보내기
-data = {
-    "email":"admin@email.com",
-    "password":"password"
-}
+# GET 요청 보내기
 
-response = requests.post(url, json=data)
+response = requests.get(url)
 # 응답 상태 코드 확인
 status_code = response.status_code
 print(f'Status Code: {status_code}')
@@ -3029,1059 +4033,60 @@ print(data)
 
 ```json
 {
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
-```
-
-### HTTP Request
-
-`POST https://dev.flyinglet.com/signin/Admin`
-
-
-### Body(Json)
-
-Parameter | Default | Description
---------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
-
-## Admin Sign in 
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
-
-# POST 요청 보내기
-data = {
-    "email":"admin@email.com",
-    "password":"password"
-}
-
-response = requests.post(url, json=data)
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
-```
-
-### HTTP Request
-
-`POST https://dev.flyinglet.com/signin/Admin`
-
-
-### Body(Json)
-
-Parameter | Default | Description
---------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
-
-## Admin Sign in 
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
-
-# POST 요청 보내기
-data = {
-    "email":"admin@email.com",
-    "password":"password"
-}
-
-response = requests.post(url, json=data)
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
-```
-
-### HTTP Request
-
-`POST https://dev.flyinglet.com/signin/Admin`
-
-
-### Body(Json)
-
-Parameter | Default | Description
---------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
-
-## Admin Sign in 
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
-
-# POST 요청 보내기
-data = {
-    "email":"admin@email.com",
-    "password":"password"
-}
-
-response = requests.post(url, json=data)
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
-```
-
-### HTTP Request
-
-`POST https://dev.flyinglet.com/signin/Admin`
-
-
-### Body(Json)
-
-Parameter | Default | Description
---------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
-
-## Admin Sign in 
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
-
-# POST 요청 보내기
-data = {
-    "email":"admin@email.com",
-    "password":"password"
-}
-
-response = requests.post(url, json=data)
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
-```
-
-### HTTP Request
-
-`POST https://dev.flyinglet.com/signin/Admin`
-
-
-### Body(Json)
-
-Parameter | Default | Description
---------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
-
-## Admin Sign in 
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/signin/Admin'
-
-# POST 요청 보내기
-data = {
-    "email":"admin@email.com",
-    "password":"password"
-}
-
-response = requests.post(url, json=data)
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-    "_id": {
-        "$oid": "63894ed9390843c9e175c20b"
-    },
-    "email": "jsmsumin2@integrit.ai",
-    "password": "1234",
-    "role": "일반관리자",
-    "phoneNumber": "12341234",
-    "adminName": "장수민2",
-    "adminId": "63894ed9390843c9e175c20b",
-    "createAt": "2022-12-13 09:50:41",
-    "adminProfile": "{\"success\": \" \", \"login\": \" \", \"owner_id\": \" \", \"user\": {\"user_id\": \" \", \"profile\": {\"name\": \" \", \"profile_img\": \" \", \"owner_id\": \" \"}}, \"group_info\": {\"name\": \" \", \"address\": \" \", \"profile_img\": \" \"}, \"robot_list\": [{\"robot_id\": \" \", \"map_id\": \" \", \"port\": \" \"}], \"map_list\": [{\"id\": \" \", \"name\": \" \"}]}"
-}
-```
-
-### HTTP Request
-
-`POST https://dev.flyinglet.com/signin/Admin`
-
-
-### Body(Json)
-
-Parameter | Default | Description
---------- | ------- | -----------
-email | false | Admin email
-password | false | Admin password
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
+    "count":2,
+    "result":[
+        {
+        "_id":{
+        "$oid":"64815a04dc204ad93e87f110"
         },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
+        "robot_id":"INTE-CUB-04184-012301",
+        "pose":{
+        "x":3091,
+        "y":687,
+        "rotate":-23.601399543747604,
+        "timestamp":1684125048653,
+        "traffic":0
         },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
+        "store_id":null,
+        "timestamp":1684092639290,
+        "map_id":null,
+        "drive_info":null,
+        "drive_status":"Stop",
+        "traffic":null
         },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
+        {
+        "_id":{
+        "$oid":"64815a04dc204ad93e87f111"
         },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
+        "robot_id":"INTE-CUB-04184-012301",
+        "pose":{
+        "x":3527,
+        "y":316,
+        "rotate":59.12929588749936,
+        "timestamp":1684125501653,
+        "traffic":0
         },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
-        },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
-        },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
-        },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
-        },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-## Get Robots collection
-
-```python
-import requests
-
-# URL 
-url = 'https://dev.flyinglet.com/Robots'
-
-# GET 요청 보내기
-response = requests.get(url)
-
-# 응답 상태 코드 확인
-status_code = response.status_code
-print(f'Status Code: {status_code}')
-
-# 응답 본문 출력
-data = response.json()
-print('Response Body:')
-print(data)
-
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-    {
-        "_id": {
-            "$oid": "6389a31716beaa76e42a2821"
-        },
-        "profile_id": "6389a37016beaa76e42a284c",
-        "createAt": "2022-11-01",
-        "agentID": " d6456517-3e13-47fd-878b-4e567e5d70f3",
-        "alias": " ",
-        "location_id": " ",
-        "model_id": " ",
-        "offStateCustomImgUrl": " ",
-        "onStateCustomImgUrl": " "
-    }
-]
-```
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-
-You must replace <code>meowmeowmeow</code> with your personal Access token.
-
-</aside>
-
-
-### HTTP Request
-
-`GET https://dev.flyinglet.com/Users`
-
-
-### Path Parameters
-
-Path의 '{{id}}'와 collection 내 '_id' 의 값이 일치하는 document 조회
-
-`GET ~/{{id}}`
-
-Parameter | Default | Description
---------- | ------- | -----------
-id | false | DB에 저장된 '_id' 값.
-
-
-[//]: # (Parameter | Default | Description)
-
-[//]: # (--------- | ------- | -----------)
-
-[//]: # (include_cats | false | If set to true, the result will also include cats.)
-
-[//]: # (available | true | If set to false, the result will include kittens that have already been adopted.)
-
-[//]: # ()
-[//]: # (<aside class="success">)
-
-[//]: # (Remember — a happy kitten is an authenticated kitten!)
-
-[//]: # (</aside>)
-
-## Get a Specific Kitten
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+        "store_id":null,
+        "timestamp":1684093091976,
+        "map_id":null,
+        "drive_info":null,
+        "drive_status":"Stop",
+        "traffic":null
+        }
+    ]
 }
 ```
 
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`POST https://dev.api.flyinglet.com/photolog/list
 
-### URL Parameters
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
+### Query Parameter
 
-## Delete a Specific Kitten
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
+Parameter | Default | Description
+--------- | ------- | -----------
+robot_id | false | robot_id
+start_timestamp | false | start_timestamp
+end_timestamp | false | end_timestamp
 
